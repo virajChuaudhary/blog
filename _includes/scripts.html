@@ -1,0 +1,15 @@
+<script src="{{site.baseurl}}/assets/js/jquery.js"></script>
+<script src="{{site.baseurl}}/assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="{{site.baseurl}}/assets/js/sticky.js"></script>
+<script src="{{site.baseurl}}/assets/js/custom.js"></script>
+<script>
+    $(window).scroll( function(){
+        var postContHeight  = $('#post-cont').height()-400;
+
+    if(
+        // $(window).scrollTop() < 150)
+        $(window).scrollTop() < postContHeight)
+     $("#sidebar").addClass("sticky");
+    else $("#sidebar").removeClass("sticky");    
+});
+</script>
