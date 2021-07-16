@@ -1,4 +1,4 @@
 ---
 permalink: "/contact"
-redirect-to: "/service"
+redirect_to: "/service"
 ---
