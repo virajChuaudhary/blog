@@ -7,7 +7,7 @@
   <h2>Categories <span>{{site.categories | size}}</span></h2>
   {% for cat in site.categories %}
   <li class="{% if page.categories == {{cat[0]}} %} {{ 'active-link' }}{% endif %}">
-    <a href="{{site.url}}/{{cat[0]}}">{{cat[0]}}</a><span>{{ cat[1] | size }}</span>
+    <a href="{{site.baseurl}}/{{cat[0]}}">{{cat[0]}}</a><span>{{ cat[1] | size }}</span>
   </li>
   {% endfor %}
   <br>
@@ -15,7 +15,7 @@
   <h2>Tags <span>{{site.tags | size}}</span></h2>
   {% for tag in site.tags %}
   <li class="{% if page.categories == {{tag[0]}} %} {{ 'active-link' }}{% endif %}"><a
-      href="{{site.url}}/{{tag[0]}}">{{tag[0]}}</a><span>{{ tag[1] | size }}</span></li>
+      href="{{site.baseurl}}/{{tag[0]}}">{{tag[0]}}</a><span>{{ tag[1] | size }}</span></li>
 
   {% endfor %}
 </div>

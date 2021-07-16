@@ -7,10 +7,17 @@
         var postHeight  =  $("#sidebar").height();
         var postContHeight  = $('#post-cont').height() - postHeight;
 
-    if( $(window).scrollTop() < postContHeight)
+    if( $(window).scrollTop() < postContHeight){
           $("#sidebar").addClass("sticky");
+          $('#sidebar').removeClass("abso");
+        }
     
-    else $("#sidebar").removeClass("sticky");    
+    else {
+        $("#sidebar").removeClass("sticky");
+        $('#sidebar').addClass("abso");
+
+           
+}
       
 });
 </script>

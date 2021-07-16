@@ -44,20 +44,20 @@
    
 
         <div class="container wrap text-right">
-            <a href="{{ page.next.url }}" class="btn btn-outline-warning mb-5 mt-5">Previous Post </a>
+            <a href="{{site.baseurl}}{{ page.next.url }}" class="btn btn-outline-warning mb-5 mt-5">Previous Post </a>
 
-            <a href="{{ page.previous.url }}" class="btn btn-outline-success mb-5 mt-5">  Next Post</a>
+            <a href="{{site.baseurl}}{{ page.previous.url }}" class="btn btn-outline-success mb-5 mt-5">  Next Post</a>
             <h2 class="text-center pb-5 pt-5"> Related Post</h2>
 
             <div class="row card-deck" id="footer">
                     {% for post in site.related_posts %}
 
                     <div class="card mb-4 post" >
-                        <img src="{{site.url}}/assets/img/{{post.img}}" class="card-img-top" alt="...">
+                        <img src="{{site.baseurl}}/assets/img/{{post.img}}" class="card-img-top" alt="...">
                         <div class="card-body">
                           <h5 class="card-title">{{post.title}}</h5>
                           <p class="card-text">{{post.shortdesc}}</p>
-                          <a href="{{post.url}}" class="btn btn-outline-success">Read More</a>
+                          <a href="{{site.baseurl}}{{post.url}}" class="btn btn-outline-success">Read More</a>
                         </div>
                       </div>
                     {% endfor %}
