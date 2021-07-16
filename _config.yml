@@ -6,15 +6,23 @@ description: "Write an awesome description for your new site here. You can edit 
   Google search results) and in your feed.xml site description."
 
   
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "https://virajchuaudhary.github.io/blog/" # the subpath of your site, e.g. /blog
+url: "https://virajchuaudhary.github.io/blog/" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
+
+
+# pagnation
+paginate: 2
+paginate_path: /page:num/
+
+
 
 # Build settings
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-paginate
 
 defaults:
   -

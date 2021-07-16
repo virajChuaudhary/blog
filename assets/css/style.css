@@ -31,15 +31,12 @@ h1,h2,h3,h4,h5{
     
    
 }
-#sidebar{
-    position: absolute;
-    top: auto;
-    
-}#sidebar.sticky {
+
+#sidebar.sticky {
     position: fixed !important; 
-    margin-bottom: 200px;
-    
+    /* margin-bottom: 200px;   */
 }
+
 
 
 .sidebar-right h2{
@@ -97,4 +94,30 @@ h1,h2,h3,h4,h5{
 .post{
     box-shadow: 0 3px 6px  3px rgba(230, 60, 60, 0.5);
 
+
 }
+.pagination a, .pagination span {
+    padding: 7px 18px;
+    border: 1px solid #eee;
+    margin-left: -2px;
+    margin-right: -2px;
+    background-color: #ffffff;
+    display: inline-block;
+  }
+
+.pagination a :hover {
+        background-color: #f1f1f1;
+        color: #333;
+    
+ }
+
+.pagination {
+    text-align: center;
+ }
+@media only screen and (max-width: 600px) {
+    #sidebar {
+     display:none;
+    }
+  }
+
+  

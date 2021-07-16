@@ -8,20 +8,20 @@
 <body>
     {% include header.html %}
     <section class="container text-left pt-5 pb-5">
-       <h1 class="">
-           {{site.title}}
-       </h1>
-       <ol class="breadcrumb  pb-5">
-        <li class="breadcrumb-item"><a href="{{site.url}}">{{site.title}}</a></li>
-        <li class="breadcrumb-item active" aria-current="page">{{page.title}}</li>
-      </ol>
+        <h1 class="">
+            {{site.title}}
+        </h1>
+        <ol class="breadcrumb  pb-5">
+            <li class="breadcrumb-item"><a href="{{site.url}}">{{site.title}}</a></li>
+            <li class="breadcrumb-item active" aria-current="page">{{page.title}}</li>
+        </ol>
 
     </section>
 
     <section>
         <div class="container">
             <div class="row">
-                <div class="col-md-7">
+                <!-- <div class="col-md-7" id="post-cont">
                     {% for post in site.posts %}
 
                     <div class="card mb-4 post" >
@@ -33,15 +33,57 @@
                         </div>
                       </div>
                     {% endfor %}
-                </div>
-               
+                </div> -->
+             <!-- post list -->
+<div class="col-md-7" id="post-cont">
 
-
+{% for post in paginator.posts %}
+<!-- <li><a href="{{post.url | prepend: site.baseurl}}"><h3>{{post.title}}</h3></a></li> -->
+    <div class="card mb-4 post" >
+        <img src="{{site.url}}/assets/img/{{post.img}}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">{{post.title}}</h5>
+          <p class="card-text">{{post.shortdesc}}</p>
+          <a href="{{post.url}}" class="btn btn-outline-success">Read More</a>
+        </div>
+      </div>
+{% endfor %}
+</div>
                 <!-- sidebar categories and tags -->
                 {% include catsidebar.html %}
 
+<!-- pagination -->
 
-              
+<div class="pagination mb-5 mt-5">
+{% if paginator.total_pages > 1 %}
+<div class="pagination">
+  {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a>
+  {% else %}
+    <span>&laquo; Prev</span>
+  {% endif %}
+
+  {% for page in (1..paginator.total_pages) %}
+    {% if page == paginator.page %}
+      <span class="webjeda">{{ page }}</span>
+    {% elsif page == 1 %}
+      <a href="/">{{ page }}</a>
+    {% else %}
+      <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+    {% endif %}
+  {% endfor %}
+
+  {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a>
+  {% else %}
+    <span>Next &raquo;</span>
+  {% endif %}
+</div>
+{% endif %}
+
+</div>
+
+
             </div>
         </div>
     </section>

@@ -4,12 +4,13 @@
 <script src="{{site.baseurl}}/assets/js/custom.js"></script>
 <script>
     $(window).scroll( function(){
-        var postContHeight  = $('#post-cont').height()-400;
+        var postHeight  =  $("#sidebar").height();
+        var postContHeight  = $('#post-cont').height() - postHeight;
 
-    if(
-        // $(window).scrollTop() < 150)
-        $(window).scrollTop() < postContHeight)
-     $("#sidebar").addClass("sticky");
+    if( $(window).scrollTop() < postContHeight)
+          $("#sidebar").addClass("sticky");
+    
     else $("#sidebar").removeClass("sticky");    
+      
 });
 </script>
