@@ -1,5 +1,6 @@
 ---
+permalink: news
 layout: categories
-categories: "news"
-permalink: "news"
+categories: news
 ---
+

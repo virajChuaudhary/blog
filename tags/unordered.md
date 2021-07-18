@@ -1,5 +1,6 @@
 ---
+permalink: unordered
 layout: tags
-categories: "unordered"
-permalink: "unordered"
+categories: unordered
 ---
+

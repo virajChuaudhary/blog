@@ -1,5 +1,6 @@
 ---
+permalink: ordered
 layout: tags
-categories: "ordered"
-permalink: "ordered"
+categories: ordered
 ---
+

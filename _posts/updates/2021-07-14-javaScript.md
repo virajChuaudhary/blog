@@ -1,12 +1,18 @@
 ---
+title: Javascript
+date: 2021-07-14 08:02:29 Z
+categories:
+- updates
+tags:
+- reserved
 layout: post
-title:  "Javascript"
-date:   2021-07-14 13:32:29 +0530
-categories: updates
-tag: reserved
-img: "js.jpg"
-shortdesc: "JavaScript, often abbreviated as JS, is a programming language that conforms to the ECMAScript specification. JavaScript is high-level, often just-in-time compiled, and multi-paradigm. It has curly-bracket syntax, dynamic typing, prototype-based object-orientation, and first-class functions"
+img: js.jpg
+shortdesc: JavaScript, often abbreviated as JS, is a programming language that conforms
+  to the ECMAScript specification. JavaScript is high-level, often just-in-time compiled,
+  and multi-paradigm. It has curly-bracket syntax, dynamic typing, prototype-based
+  object-orientation, and first-class functions
 ---
+
 Creation at Netscape
 The Mosaic web browser was released in 1993. As the first browser with a graphical user interface accessible to non-technical people, it played a prominent role in the rapid growth of the nascent World Wide Web.[13] The lead developers of Mosaic then founded the Netscape corporation, which released a more polished browser, Netscape Navigator, in 1994. Navigator quickly became the most used browser.[14]
 

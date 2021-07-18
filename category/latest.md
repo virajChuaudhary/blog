@@ -1,5 +1,6 @@
 ---
+permalink: latest
 layout: categories
-categories: "latest"
-permalink: "latest"
+categories: latest
 ---
+

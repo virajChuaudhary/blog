@@ -1,5 +1,6 @@
 ---
+permalink: updates
 layout: categories
-categories: "updates"
-permalink: "updates"
+categories: updates
 ---
+

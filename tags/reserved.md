@@ -1,5 +1,6 @@
 ---
+permalink: reserved
 layout: tags
-categories: "reserved"
-permalink: "reserved"
+categories: reserved
 ---
+
