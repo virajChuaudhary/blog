@@ -5,6 +5,13 @@ categories:
 - updates
 tags:
 - reserved
+img: 
+shortdesc: The set of jQuery core features—DOM element selections, traversal and manipulation—enabled
+  by its selector engine (named "Sizzle" from v1.3), created a new "programming style",
+  fusing algorithms and DOM data structures. This style influenced the architecture
+  of other JavaScript frameworks like YUI v3 and Dojo, later stimulating the creation
+  of the standard Selectors API.[7] Later, this style has been enhanced with a deeper
+  algorithm-data fusion in an heir of jQuery, the D3.js framework
 layout: post
 ---
 
