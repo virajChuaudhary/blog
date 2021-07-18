@@ -5,7 +5,7 @@ categories:
 - updates
 tags:
 - reserved
-img: 
+img: "/uploads/jquery.jfif"
 shortdesc: The set of jQuery core features—DOM element selections, traversal and manipulation—enabled
   by its selector engine (named "Sizzle" from v1.3), created a new "programming style",
   fusing algorithms and DOM data structures. This style influenced the architecture
